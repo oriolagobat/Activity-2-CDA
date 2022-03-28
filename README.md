@@ -1,1 +1,2 @@
-# Activity-2-CDA
+# Activity 2 - Distributed Computing Aplications
+I will be making my project on this repository
