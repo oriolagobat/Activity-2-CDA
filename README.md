@@ -104,3 +104,13 @@ partitions in some way, and that's what keys work for.
 ## Running the code
 
 Repeat the same steps as in the last case, changing the code execution to the one from the `ProducerCallbackKeys` file
+
+# Kafka consumer 
+In this part, I have implemented a simple kafka consumer, that will read the messages from a topic.
+
+As before, we first create its properties, declare the topic to read from and start reading from it.
+In this example, it will simply use the logger to print the different values messages being read.
+
+## Running the code
+1. Run the consumer (`Consumer`)
+2. Run any of the producers (`Producer`, `ProducerCallback` or `ProducerCallbackKeys`)
