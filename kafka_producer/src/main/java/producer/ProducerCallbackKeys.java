@@ -6,10 +6,10 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Properties;
 
-import static utils.UtilProducer.closeProducer;
 import static utils.UtilProducer.getProducerProperties;
+import static utils.UtilProducer.closeProducer;
 
-public class ProducerCallback {
+public class ProducerCallbackKeys {
     public static KafkaProducer<String, String> producer;
 
     public static void main(String[] args) {
@@ -35,4 +35,5 @@ public class ProducerCallback {
 
         closeProducer(producer);
     }
+
 }
