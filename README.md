@@ -64,4 +64,10 @@ Next, we also need to include the sl4j dependency.
 4. Remove the <scope>test</scope> tag, so these dependencies is included all the project scope.
 
 
+## Creating producer's properties
+Now, we'll create the producer properties in the code. These are:
+- `bootstrap.servers`: List of ports used to establish an initial connection to the Kafka cluster.
+- `key.serializer`: Serializer used to serialize the key of the message.
+- `value.serializer`: Serializer used to serialize the value of the message.
+
  
