@@ -82,14 +82,25 @@ Second message
 ```
 
 # Kafka Producer with callback
+
 In this second project, we implement producers with callback functions, to asynchronously handle requests completion.
 The function that handle the request completion is called a `onCompletion()`. Its parameters are:
+
 - Metadata of the Record: Information about the record that was produced (partitions and offsets).
 - Exception: If the request failed, the exception is returned.
 
-To show the ways in which we can interact with the producer's metadata, and using a callback, we'll log these data through a log.
+To show the ways in which we can interact with the producer's metadata, and using a callback, we'll log these data
+through a log.
 
 ## Running the code
+
 Repeat the same steps as in the last case, changing the code execution to the one from the `ProducerCallback` file
 
 # Kafka Producer with callback and keys
+
+We can also work with keys, which help when doing synchronous requests. In this ones, we'll have to difference between
+partitions in some way, and that's what keys work for.
+
+## Running the code
+
+Repeat the same steps as in the last case, changing the code execution to the one from the `ProducerCallbackKeys` file
