@@ -21,8 +21,8 @@ public class ProducerCallbackKeys {
 
         String topic = "my-topic";
         for (int i = 0; i < 10; i++) {
-            String key = "id_" + i;
-            String value = "value_" + i * 10;
+            String key = "id: " + i;
+            String value = "value: " + i * 10;
 
             ProducerRecord<String, String> record = new ProducerRecord<>(topic, key, value);
 
