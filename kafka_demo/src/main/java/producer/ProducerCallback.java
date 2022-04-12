@@ -21,7 +21,7 @@ public class ProducerCallback {
         producer.send(record, (recordMetadata, e) -> {
             Logger logger = LoggerFactory.getLogger(ProducerCallback.class);
             if (e == null) {
-                logger.info("Successfully received the details as: \n" +
+                logger.info("Successfully published the details as: \n" +
                         "Topic: " + recordMetadata.topic() + "\n" +
                         "Partition: " + recordMetadata.partition() + "\n" +
                         "Offset: " + recordMetadata.offset() + "\n" +
