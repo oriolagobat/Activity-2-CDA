@@ -1,14 +1,15 @@
 package producer;
 
-import org.apache.kafka.clients.producer.*;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
-import static utils.UtilProducer.getProducerProperties;
 import static utils.UtilProducer.closeProducer;
+import static utils.UtilProducer.getProducerProperties;
 
 public class ProducerCallbackKeys {
     public static KafkaProducer<String, String> producer;
